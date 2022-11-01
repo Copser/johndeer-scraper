@@ -3,5 +3,6 @@
 import Config
 
 config :wallaby,
-  js_errors: false
+  js_errors: false,
+  hackney_options: [timeout: 5_000, recv_timeout: 5_000]
 
